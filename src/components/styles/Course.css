@@ -1,4 +1,4 @@
-.Profile {
+.Course {
   background: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.10);
   border-radius: 8px 8px 8px 8px;
@@ -6,7 +6,7 @@
   height: 380px;
 }
 
-.Profile__title {
+.Course__title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@
   
 }
 
-.Profile__header {
+.Course__header {
   padding: 0.5rem;
   height: 80px;
   background: #172b38;
@@ -24,14 +24,14 @@
   justify-content: center;
 }
 
-.Profile__section-name {
+.Course__section-name {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
 }
 
-.Profile__section-info {
+.Course__section-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,14 +40,14 @@
   background: #ebf0f1;
 }
 
-.Profile__ImgTitle{
+.Course__ImgTitle{
   margin-left: 0.1rem;
   width: 70px;
   height: 70px;
 }
 
 
-.Profile__avatar {
+.Course__logo {
   border-radius: 50%;
   margin-right: 1rem;
   margin-left: 2.3rem;
@@ -55,7 +55,7 @@
   height: 100px;
 }
 
-.Profile__footer {
+.Course__footer {
   height: 70px;
   display: flex;
   justify-content: center;
