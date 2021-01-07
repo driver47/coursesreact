@@ -1,0 +1,162 @@
+
+@font-face {
+    font-family: mandalore;
+    src:url(mandalore/mandalore.ttf); 
+}
+
+@font-face {
+    font-family: mandalore3d;
+    src:url(mandalore/mandalore3d.ttf); 
+}
+
+@font-face {
+    font-family: sofiapro;
+    src:url(sofia/sofiapro-light.otf); 
+}
+
+
+
+.homeHero {
+    
+    background-image:linear-gradient(rgba(2, 83, 190, 0.746), rgb(2, 83, 190, 0.746)), url(../../images/me.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0px!important;
+    color: #090b13;
+    
+
+
+}
+
+.homeHero h1 {
+    font-family: mandalore;
+    margin: 30px 0;
+    font-size: 50px;
+    line-height: 1.5;
+    color:white;
+}
+
+.homeIntro {
+    padding-top: 160px;
+}
+
+
+.homeIntro img {
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    font-family: sofiapro;
+    font-size: 18px;
+    color: white!important;
+    margin: 0 20px;
+    
+}
+
+.navbar-toggler {
+    color: white!important;
+    border: white!important;
+    outline: none!important;
+}
+
+.navbar-toggler i {
+    color: white;
+    font-size: 26px;
+}
+
+.bg-new {
+    background-color: #000f1d70;
+}
+
+.nav-link:hover {
+    
+    border-bottom: 1px solid #000f1d;
+    margin-bottom: -1px;
+    box-shadow:  #000f1d 0 -1px;
+    background-color: #000f1d70;
+}
+
+.homeIntro .btn {
+    font-family: mandalore;
+    border: 1px solid #ffffff;
+    margin-top: 20px;
+    padding: 6px 26px;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.homeIntro .btn:hover {
+    transform: translateY(-10px);
+}
+
+
+
+.navbar-brand {
+    position: sticky;
+    top: 20px;
+    font-family: mandalore;
+    font-size: 25px;
+    color: #124ff6a8;
+}
+
+.navbar-brand:hover {
+    color: #124ff6;
+}
+   
+
+@media only screen and (max-width: 1000px){
+
+    .navbar{
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .nav-link {
+        margin: 0px 5px 0 17px;
+        margin-top: 30px;
+        
+    }
+
+    .nav-link:hover {
+        border-bottom: none;
+    }
+
+    .homeIntro {
+        padding-top: 130px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .homeHero h1 {
+      font-size: 40px;
+      line-height:50px;
+    }
+
+    .homeIntro {
+        padding-top: 100px;
+    }
+
+    .homeIntro img {
+    
+        padding-top: 50px;
+    }
+
+    .homeIntro button {
+        border: 1px solid #ffffff;
+        margin-top: 0px;
+        padding: 6px 26px;
+        font-size: 16px;
+    }
+    
+
+
+
+}
+
+
+
+
+
+

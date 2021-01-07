@@ -12,9 +12,16 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
     "bootstrap": "4.3.1",
+    "node-sass": "^4.14.1",
     "react": "16.8.3",
+    "react-datepicker": "^3.3.0",
     "react-dom": "16.8.3",
+    "react-icons": "^4.1.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.5"
   },
   "devDependencies": {

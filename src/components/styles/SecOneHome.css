@@ -1,0 +1,61 @@
+.container-fluid{
+    padding: 0;
+    position: relative;
+}
+
+.sec-one-home {
+    height: 130vh;
+    border-radius: 0px!important;
+    color: #ffffff;
+    background-size: cover;
+    background-color:#000f1d;
+}
+
+
+.custom-shape-divider-top-1608487546 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1608487546 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 160px;
+}
+
+.custom-shape-divider-top-1608487546 .shape-fill {
+    fill: #0253BEBE;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-top-1608487546 svg {
+        width: calc(100% + 1.3px);
+        height: 93px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-top-1608487546 svg {
+        width: calc(100% + 1.3px);
+        height: 53px;
+    }
+
+    .sec-one-home {
+        height: 230vh;
+       
+    }
+}
+
+
+
+/** Carts **/
+
+
+

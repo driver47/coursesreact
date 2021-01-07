@@ -1,0 +1,44 @@
+   
+
+    .jumbotron {
+        background-image: url(../../images/me.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image:linear-gradient(rgba(0, 150, 220, 0.609), rgba(0, 0, 0, 0.945)), url(../../images/me.jpg);
+        background-color: #0098dc;
+        background-size: cover;
+        border-radius: 0%;
+        color: aliceblue;
+        text-align: right;
+       }
+        
+  
+  .hero-one {
+    top: 0;
+    position: absolute;
+    width: 60%;
+    background-color: black;
+    height: 50vh;
+    clip-path: polygon(0 0, 60vw 0, 40vw 100vh, 0 100vh);
+    z-index: 1;
+    background-image:linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(../../images/me.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero-two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    background-color: rgb(16, 106, 223);
+    height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url(../../images/code.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+ 
+  

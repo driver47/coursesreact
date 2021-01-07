@@ -1,0 +1,22 @@
+.Courses__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .Courses__container {
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .Courses_conf-logo {
+    margin-bottom: 2rem;
+  }
+  
+  .Courses__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
