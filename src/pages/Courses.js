@@ -3,118 +3,61 @@ import HeroBasic from "../components/HeroBasic";
 import "../components/styles/CourseList.css";
 import CoursesList from "../components/CoursesList";
 import { Link } from "react-router-dom";
-import Certificado1 from "../images/certificados/ingles1.jpg";
-import Certificado2 from "../images/certificados/ingles2.jpg";
-import Certificado3 from "../images/certificados/ingles3.jpg";
+import api from '../api'; 
+
 
 class Courses extends React.Component {
   
+  state = {
+    loading: true,
+    error: null,
+    data: undefined
+  };
 
-  constructor(props) {
-    super(props);
-    console.log('1.Constructor()');
-
-    this.state = {
-      data: []
-    };
-
+  componentDidMount () {
+    this.fetchData()
   }
 
-  componentDidMount() {
-    console.log('3.ComponentDidMount');
+  fetchData = async () => {
     
-    // esta funcion en 3 segundos va actualizar el estado 
-    this.timeoutId = setTimeout(() => { 
     this.setState({
-      data: [
-        {
-          id: "2de30c42-9deb-40fc-a41f-05e62b5939a7",
-          courseName: "LAN Networks Course",
-          courseCampus: "UCC",
-          courseWebDir: "www.ucc.edu.co",
-          courseDuration: "40hours",
-          courseLogo: Certificado1,
-        },
-        {
-          id: "d00d3614-101a-44ca-b6c2-0be075aeed3d",
-          courseName: "Computer Maintenance",
-          courseCampus: "UCC",
-          courseWebDir: "www.ucc.edu.co",
-          courseDuration: "40hours",
-          courseLogo: Certificado2,
-        },
-        {
-          id: "63c03386-33a2-4512-9ac1-354ad7bec5e9",
-          courseName: "NTIC - Applied to Training",
-          courseCampus: "SENA",
-          courseWebDir: "www.sena.edu.co",
-          courseDuration: "40hours",
-          courseLogo: Certificado3,
-        },
-        {
-          id: "a9748581-dfdc-4a78-930d-5205a2ccef48",
-          courseName: "Introduction to Pedagogical Processes",
-          courseCampus: "SENA",
-          courseWebDir: "www.sena.edu.co",
-          courseDuration: "40hours",
-          courseLogo: Certificado2,
-        },
-        {
-          id: "1921a734-cc05-4f71-a677-ffe38dda6958",
-          courseName: "NTICS - Administration Process",
-          courseCampus: "SENA",
-          courseWebDir: "www.sena.edu.co",
-          courseDuration: "40hours",
-          courseLogo: Certificado3,
-        },
-        {
-          id: "3629db36-14f9-4f24-b139-200f3a1b9af7",
-          courseName: "JavaScript Algorithms and Data Structures",
-          courseCampus: "Free Code Camp",
-          courseWebDir: "freeCodeCamp.org",
-          courseDuration: "300hours",
-          courseLogo: Certificado1,
-        },
-        {
-          id: "8c734836-1f7a-4493-b903-37db30fc7224",
-          courseName: "Git and GitHub",
-          courseCampus: "Platzy",
-          courseWebDir: "platzi.com",
-          courseDuration: "15hours",
-          courseLogo:
-            "https://www.ucc.edu.co/_catalogs/masterpage/eResponsive/img/logo-ucc.png",
-        },
-      ],
-
-    });
-
-    },1000);
-
-  
-  }
-
-  componentDidUpdate(prevProps, prevState) {
-    console.log('5.componentDidUpdate()');
-    console.log({
-      prevProps: prevProps , prevState: prevState
-    }); 
-
-    console.log({
-      props: this.props,
-      state: this.state, 
+      loading: true,
+      error: null
     })
-  }
 
-  componentWillUnmount() {
-    console.log('6. componentWilUnmount'); 
+    try {
 
-    clearTimeout(this.timeoutId); 
-  }
+      const data = await api.courses.list();
+      this.setState({
+        loading: false,
+        data: data
+       })
+
+    } 
+    catch (error) {
+
+      this.setState({
+        loading: false,
+        error: error
+       })
+
+    }
+
+  };
+  
+
 
 
   render() {
 
-    console.log('2/4.Render()'); 
+    if(this.state.loading === true){
+      return 'Loading...'; 
+    }
+
+    if(this.state.error){
+      return `Error: ${this.state.error.message}`; 
+    }
+
 
     return (
       <React.Fragment>

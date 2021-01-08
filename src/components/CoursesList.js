@@ -1,8 +1,20 @@
 import React from "react";
 import "./styles/Course.css";
+import { Link } from "react-router-dom"; 
 
 class CoursesList extends React.Component {
   render() {
+
+    if (this.props.courses.length === 0){
+      return (
+        <div>
+          <h3>No Courses were found</h3>
+          <Link className="btn btn-primary" to="/courses/new">
+            Create New Course
+          </Link>
+        </div>
+      )
+    }
     return (
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         {this.props.courses.map((course) => {

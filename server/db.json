@@ -55,6 +55,15 @@
       "courseWebDir": "platzi.com",
       "courseDuration": "15hours",
       "courseLogo": "//static.platzi.com/mf-landings/image/isotipoPlatzi-442ccc1186a9806e18c9889cc301ffe1.png"
+    },
+
+    {
+      "id": "8c734836-1f7a-4493-b903-37db30fc7288",
+      "courseName": "React",
+      "courseCampus": "Platzy",
+      "courseWebDir": "platzi.com",
+      "courseDuration": "15hours",
+      "courseLogo": "//static.platzi.com/mf-landings/image/isotipoPlatzi-442ccc1186a9806e18c9889cc301ffe1.png"
     }
     
   ]
