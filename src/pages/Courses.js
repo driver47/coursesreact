@@ -2,6 +2,8 @@ import React from "react";
 import HeroBasic from "../components/HeroBasic";
 import "../components/styles/CourseList.css";
 import CoursesList from "../components/CoursesList";
+import PageLoading from "../components/PageLoading";
+import PageError from "../components/PageError";  
 import { Link } from "react-router-dom";
 import api from '../api'; 
 
@@ -47,15 +49,14 @@ class Courses extends React.Component {
   
 
 
-
   render() {
 
     if(this.state.loading === true){
-      return 'Loading...'; 
+      return <PageLoading />; 
     }
 
     if(this.state.error){
-      return `Error: ${this.state.error.message}`; 
+      return <PageError error={this.state.error} />; 
     }
 
 

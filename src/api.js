@@ -24,6 +24,7 @@ async function callApi(endpoint, options = {}) {
 const api = {
   courses: {
     list() {
+       //throw new Error('500');
        return callApi('/courses');
     },
     create(course) {
