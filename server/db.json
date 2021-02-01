@@ -56,7 +56,6 @@
       "courseDuration": "15hours",
       "courseLogo": "//static.platzi.com/mf-landings/image/isotipoPlatzi-442ccc1186a9806e18c9889cc301ffe1.png"
     },
-
     {
       "id": "8c734836-1f7a-4493-b903-37db30fc7288",
       "courseName": "React",
@@ -64,7 +63,22 @@
       "courseWebDir": "platzi.com",
       "courseDuration": "15hours",
       "courseLogo": "//static.platzi.com/mf-landings/image/isotipoPlatzi-442ccc1186a9806e18c9889cc301ffe1.png"
+    },
+    {
+      "courseName": "Curso Pomodoro",
+      "courseCampus": "Comfacauca",
+      "courseWebDir": "www.comfacauca.com.co",
+      "courseDuration": "40h",
+      "courseLogo": "//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/170px-Sena_Colombia_logo.svg.png",
+      "id": "KLmuayD"
+    },
+    {
+      "courseName": "Marketing Digital",
+      "courseCampus": "SENA",
+      "courseWebDir": "www.sena.com",
+      "courseDuration": "40 hours",
+      "courseLogo": "//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/170px-Sena_Colombia_logo.svg.png",
+      "id": "wrU0ec2"
     }
-    
   ]
 }

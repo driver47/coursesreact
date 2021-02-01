@@ -29,11 +29,11 @@ class CourseForm extends React.Component {
         console.log("Button was clicked for me bro"); 
     };
 
-    handleSubmit = e => {
+   /* handleSubmit = e => {
         e.preventDefault(); // de esta forma detengo el formulario 
         console.log("Form was stoped"); 
         console.log(this.state);
-    };
+    };*/
 
     render(){
         return (
@@ -41,7 +41,7 @@ class CourseForm extends React.Component {
 
                 <h1>New Course</h1>
 
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.props.onSubmit}>
 
                     <div className="form-group">
                         <label>Name</label>
