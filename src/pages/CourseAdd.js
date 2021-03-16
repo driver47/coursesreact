@@ -3,11 +3,15 @@ import Course from "../components/Course";
 import CourseForm from "../components/CourseForm"; 
 import HeroBasic from "../components/HeroBasic";
 import api from "../api"; 
+import PageLoading from "../components/PageLoading";
 
 
 class CourseAdd extends React.Component {
    
-  state = { form: {
+  state = { 
+    loading: false,
+    error: null,
+    form: {
     courseName: '',
     courseCampus: '',
     courseWebDir: '',
@@ -31,13 +35,23 @@ class CourseAdd extends React.Component {
 
     try {
       await api.courses.create(this.state.form)
-      this.setState({ loading: false }) // detenemos el loading y los datos no los vamos a usar 
+      this.setState({ loading: false }); // detenemos el loading y los datos no los vamos a usar 
+
+      this.props.history.push('/courses');
+
     } catch (error) {
       this.setState({ loading: false, error: error }) // detenemos el loading y mostramos el error
     }
   }
 
   render() {
+     
+    if(this.state.loading){
+      return <PageLoading />;
+    }
+
+
+
     return (
       <React.Fragment>
         <HeroBasic />
@@ -58,7 +72,10 @@ class CourseAdd extends React.Component {
                 <CourseForm 
                 onChange={this.handleChange} 
                 onSubmit={this.handleSubmit}
-                formValues={this.state.form}/>
+                formValues={this.state.form}
+                error={this.state.error}
+                />
+               
             </div>
 
 

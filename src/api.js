@@ -28,6 +28,7 @@ const api = {
        return callApi('/courses');
     },
     create(course) {
+      //throw new Error('500: Server Error');
       return callApi(`/courses`, {
         method: 'POST',
         body: JSON.stringify(course),

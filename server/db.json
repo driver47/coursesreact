@@ -79,6 +79,62 @@
       "courseDuration": "40 hours",
       "courseLogo": "//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/170px-Sena_Colombia_logo.svg.png",
       "id": "wrU0ec2"
+    },
+    {
+      "courseName": "Curso de Datos",
+      "courseCampus": "Comfacauca",
+      "courseWebDir": "comfacauca.edu.co",
+      "courseDuration": "40 hours",
+      "courseLogo": "",
+      "id": "wwFmMbs"
+    },
+    {
+      "courseName": "Curso de Datos",
+      "courseCampus": "Comfacauca",
+      "courseWebDir": "comfacauca.edu.co",
+      "courseDuration": "40 hours",
+      "courseLogo": "",
+      "id": "0-IYXb_"
+    },
+    {
+      "courseName": "Curso web ",
+      "courseCampus": "Comfacauca",
+      "courseWebDir": "www.comfacauca.com",
+      "courseDuration": "40",
+      "courseLogo": "https://fundacionsmurfitkappa.org.co/up/2018/07/comfacauca-logo-01.png",
+      "id": "0KwJ2kw"
+    },
+    {
+      "courseName": "Curso web ",
+      "courseCampus": "Comfacauca",
+      "courseWebDir": "www.comfacauca.com",
+      "courseDuration": "40",
+      "courseLogo": "https://fundacionsmurfitkappa.org.co/up/2018/07/comfacauca-logo-01.png",
+      "id": "nF-ZiA_"
+    },
+    {
+      "courseName": "Marketing Digital Para Emprendedores",
+      "courseCampus": "Comfacauca",
+      "courseWebDir": "www.comfacauca.com.co",
+      "courseDuration": "40 hours",
+      "courseLogo": "//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/170px-Sena_Colombia_logo.svg.png",
+      "id": "l0DQPvr"
+    },
+    {
+      "courseName": "Curso filosofia",
+      "courseCampus": "Comfacauca",
+      "courseWebDir": "openenglish.com",
+      "courseDuration": "40 hours",
+      "courseLogo": "//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/170px-Sena_Colombia_logo.svg.png",
+      "id": "jcl2MTT"
+    },
+    {
+      "courseName": "React ",
+      "courseCampus": "Comfacauca",
+      "courseWebDir": "openenglish.com",
+      "courseDuration": "40 hours",
+      "courseLogo": "//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/170px-Sena_Colombia_logo.svg.png",
+      "id": "0d5zzND"
     }
   ]
 }
