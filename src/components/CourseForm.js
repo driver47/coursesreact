@@ -39,7 +39,6 @@ class CourseForm extends React.Component {
         return (
             <div>
 
-                <h1>New Course</h1>
 
                 <form onSubmit={this.props.onSubmit}>
 

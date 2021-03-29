@@ -20,6 +20,7 @@ class CoursesList extends React.Component {
         {this.props.courses.map((course) => {
           return (
             <div key={course.id} className="col">
+              
               <div className="card shadow-sm m-2">
                 <img
                   src={course.courseLogo}
@@ -27,14 +28,17 @@ class CoursesList extends React.Component {
                   alt="images"
                 />
 
-                <div className="text-white text-center bg-primary card-body">
-                  <h5>{course.courseName}</h5>
+                <div className="text-white bg-primary card-body">
+               <Link className="text-reset text-decoration-none text-center" to={`/courses/${course.id}/edit`}>
+                  <h6>{course.courseName}</h6>
+               </Link>
                   <p className="text-success"><em>{course.courseCampus} - {course.courseDuration}</em></p>
                 </div>
 
                 <div className="card-footer text-center text-white bg-info">
                   {course.courseWebDir}
                 </div>
+                
               </div>
             </div>
           );

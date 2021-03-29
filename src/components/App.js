@@ -3,13 +3,10 @@ import { BrowserRouter , Switch, Route} from 'react-router-dom';
 
 import Layout from './layout'; 
 import CourseAdd from '../pages/CourseAdd';
+import CourseEdit from '../pages/CourseEdit';
 import Courses from '../pages/Courses'; 
 import NotFount from '../pages/NotFount';
 import BeginHome from '../pages/BeginHome'; 
-
-
-
-
 
 
 
@@ -22,6 +19,7 @@ function App() {
          <Route exact path="/" component={BeginHome} />
          <Route exact path="/courses" component={Courses} />
          <Route exact path="/courses/new" component={CourseAdd} />
+         <Route exact path="/courses/:courseId/edit" component={CourseEdit} />
          <Route component={NotFount} /> 
          </Switch>
         </Layout>

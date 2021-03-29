@@ -6,10 +6,10 @@ import api from "../api";
 import PageLoading from "../components/PageLoading";
 
 
-class CourseAdd extends React.Component {
+class CourseEdit extends React.Component {
    
   state = { 
-    loading: false,
+    loading: true,
     error: null,
     form: {
     courseName: '',
@@ -18,6 +18,29 @@ class CourseAdd extends React.Component {
     courseDuration: '',
     courseLogo: '',
   } };
+
+  componentDidMount() { //Cuando el componente se monte 
+    this.fetchData()  // voy a empezar a carhar los datos con esta funcion fechData()
+  }
+
+  //Definimos la funcion fechData cuando pedimos datos la funcion debe ser async asincrona 
+  fetchData = async e => {
+    this.setState({ loading: true, error: null }); // comensamos con nuestro patron de peticion
+    
+    // intentamos hacer la peticion al api
+    try {
+      const data = await api.courses.read(  //read toma el id del curso que nos interesa 
+        this.props.match.params.courseId  //vamos a leer el id por medio de un prop llamado match
+      )                                  // cada una de las variables vamos a accederlas con el 
+                                         // objeto params del courseId
+
+      this.setState({ loading: false, form: data }); // si optenemos los datos los vamos a guardar 
+                                                    // dentro del form 
+    } catch (error) { // en caso de que ocurra un error lo vamos a menejar 
+      this.setState({ loading: false, error: error}); // detenemos el loading y desplegamos el error 
+    }
+
+  };
 
   handleChange = e => {
    
@@ -34,7 +57,7 @@ class CourseAdd extends React.Component {
     this.setState({ loading: true, error: null }) // inicializamos el loading con error null por que apenas estamos enviando los datos
 
     try {
-      await api.courses.create(this.state.form)
+      await api.courses.update(this.props.match.params.courseId,this.state.form)
       this.setState({ loading: false }); // detenemos el loading y los datos no los vamos a usar 
 
       this.props.history.push('/courses');
@@ -69,7 +92,7 @@ class CourseAdd extends React.Component {
             </div>
 
             <div className="col-6">
-                <h1>New Course</h1>
+                <h1>Edit Course</h1>
                 <CourseForm 
                 onChange={this.handleChange} 
                 onSubmit={this.handleSubmit}
@@ -93,4 +116,4 @@ class CourseAdd extends React.Component {
   }
 }
 
-export default CourseAdd;
+export default CourseEdit;
