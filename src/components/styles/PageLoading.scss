@@ -5,7 +5,7 @@ $colorLeft: darken(#5C8DF6, 5%);
 $shadow: #DBE3F4;
 
 .boxes {
-    --size: 32px;
+    --size: 16px;
     --duration: 800ms;
     height: calc(var(--size) * 2);
     width: calc(var(--size) * 3);

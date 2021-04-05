@@ -105,7 +105,7 @@ class CourseForm extends React.Component {
 
                   
                     
-                    <button onClick={this.handleClick} className="btn btn-success">Create</button>
+                    <button onClick={this.handleClick} className="btn btn-success">Enviar</button>
                    
                     {this.props.error && (
                         <p className="text-danger">{this.props.error.message}</p>
