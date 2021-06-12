@@ -29,7 +29,7 @@ class CoursesList extends React.Component {
                 />
 
                 <div className="text-white bg-primary card-body">
-               <Link className="text-reset text-decoration-none text-center" to={`/courses/${course.id}/edit`}>
+               <Link className="text-reset text-decoration-none text-center" to={`/courses/${course.id}`}>
                   <h6>{course.courseName}</h6>
                </Link>
                   <p className="text-success"><em>{course.courseCampus} - {course.courseDuration}</em></p>

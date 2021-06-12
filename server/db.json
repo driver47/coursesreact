@@ -135,6 +135,14 @@
       "courseDuration": "40 hours",
       "courseLogo": "//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/170px-Sena_Colombia_logo.svg.png",
       "id": "0d5zzND"
+    },
+    {
+      "courseName": "Excel",
+      "courseCampus": "Comfacauca",
+      "courseWebDir": "www.comfacauca.com",
+      "courseDuration": "15horas",
+      "courseLogo": "https://fundacionsmurfitkappa.org.co/up/2018/07/comfacauca-logo-01.png",
+      "id": "AahgmJF"
     }
   ]
 }
