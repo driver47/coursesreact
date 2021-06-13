@@ -7,7 +7,7 @@ import CourseEdit from '../pages/CourseEdit';
 import Courses from '../pages/Courses'; 
 import NotFount from '../pages/NotFount';
 import BeginHome from '../pages/BeginHome'; 
-import CourseDetails from '../pages/CourseDetails';
+import CourseDetails from '../pages/CourseDetailsContainer';
 
 
 
