@@ -3,8 +3,23 @@ import Course from "../components/Course";
 import { Link } from "react-router-dom"; 
 import DeleteCourseModal from "../components/DeleteCourseModal";
 
+
+function useIncreaseCount(max) {
+ const [ count, setCount] = React.useState(0); 
+
+ if (count > max) {
+     setCount(0); 
+ }
+ 
+ return [count, setCount]; 
+} 
+
+
+
 function CourseDetails (props) {
+    const [count, setCount] = useIncreaseCount(4);
     const coursedata = props.coursedata;
+   
 
     return (
         <div>
@@ -34,7 +49,20 @@ function CourseDetails (props) {
                 </div>
                 <div className="col">
                     <h2>Actions</h2>
-                    <div><Link className="btn btn-secondary mb-4" to={`/courses/${coursedata.id}/edit`}>
+
+
+
+
+                    <div>
+                        <button onClick={() => {
+                          setCount(count + 1);
+                        }} 
+                        className="btn btn-primary mr-4">
+                            Increase Count: {count}
+                        </button> 
+                        
+                        
+                    <Link className="btn btn-secondary mb-4" to={`/courses/${coursedata.id}/edit`}>
                         <h5>Edit Course</h5>
                     </Link>
                     </div>
