@@ -1,6 +1,7 @@
 import React from "react"; 
 import Course from "../components/Course";
 import { Link } from "react-router-dom"; 
+import DeleteCourseModal from "../components/DeleteCourseModal";
 
 function CourseDetails (props) {
     const coursedata = props.coursedata;
@@ -38,9 +39,14 @@ function CourseDetails (props) {
                     </Link>
                     </div>
 
-                    <div><button className="btn btn-danger">
-                        <h5>Delete</h5>
-                    </button>
+                    <div><button onClick={props.onOpenModal} className="btn btn-danger"><h5>Delete</h5></button>
+                   
+                     <DeleteCourseModal 
+                      isOpen={props.modalIsOpen} 
+                      onClose={props.onCloseModal}
+                      onDeleteCourse={props.onDeleteCourse}
+                      />
+                  
                     </div>   
                 </div>
             </div>

@@ -9,14 +9,6 @@
       "courseLogo": "https://www.ucc.edu.co/_catalogs/masterpage/eResponsive/img/logo-ucc.png"
     },
     {
-      "id": "d00d3614-101a-44ca-b6c2-0be075aeed3d",
-      "courseName": "Computer Maintenance",
-      "courseCampus": "UCC",
-      "courseWebDir": "www.cauca.edu.co",
-      "courseDuration": "40hours",
-      "courseLogo": "https://www.ucc.edu.co/_catalogs/masterpage/eResponsive/img/logo-ucc.png"
-    },
-    {
       "id": "63c03386-33a2-4512-9ac1-354ad7bec5e9",
       "courseName": "NTIC - Applied to Training",
       "courseCampus": "SENA",
@@ -81,36 +73,12 @@
       "id": "wrU0ec2"
     },
     {
-      "courseName": "Curso de Datos",
-      "courseCampus": "Comfacauca",
-      "courseWebDir": "comfacauca.edu.co",
-      "courseDuration": "40 hours",
-      "courseLogo": "",
-      "id": "wwFmMbs"
-    },
-    {
-      "courseName": "Curso de Datos",
-      "courseCampus": "Comfacauca",
-      "courseWebDir": "comfacauca.edu.co",
-      "courseDuration": "40 hours",
-      "courseLogo": "",
-      "id": "0-IYXb_"
-    },
-    {
       "courseName": "Curso web ",
       "courseCampus": "Comfacauca",
       "courseWebDir": "www.comfacauca.com",
       "courseDuration": "40",
       "courseLogo": "https://fundacionsmurfitkappa.org.co/up/2018/07/comfacauca-logo-01.png",
       "id": "0KwJ2kw"
-    },
-    {
-      "courseName": "Curso web ",
-      "courseCampus": "Comfacauca",
-      "courseWebDir": "www.comfacauca.com",
-      "courseDuration": "40",
-      "courseLogo": "https://fundacionsmurfitkappa.org.co/up/2018/07/comfacauca-logo-01.png",
-      "id": "nF-ZiA_"
     },
     {
       "courseName": "Marketing Digital Para Emprendedores",
@@ -135,14 +103,6 @@
       "courseDuration": "40 hours",
       "courseLogo": "//upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sena_Colombia_logo.svg/170px-Sena_Colombia_logo.svg.png",
       "id": "0d5zzND"
-    },
-    {
-      "courseName": "Excel",
-      "courseCampus": "Comfacauca",
-      "courseWebDir": "www.comfacauca.com",
-      "courseDuration": "15horas",
-      "courseLogo": "https://fundacionsmurfitkappa.org.co/up/2018/07/comfacauca-logo-01.png",
-      "id": "AahgmJF"
     }
   ]
 }
