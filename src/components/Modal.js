@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/Modal.css"; 
-
+//data for app
 function Modal (props) {
 
     if (!props.isOpen) {
